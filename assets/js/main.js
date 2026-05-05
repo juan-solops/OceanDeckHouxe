@@ -45,13 +45,3 @@ const USE_HERO_VIDEO = true;
     video.style.display = 'none';
   });
 })();
-
-/* ===== ODH_VIDEO_JS_PATCH_START ===== */
-(function () {
-  const video = document.getElementById('heroVideo');
-  if (!video) return;
-  if (!USE_HERO_VIDEO) { video.style.display = 'none'; return; }
-  video.play().catch(() => { video.style.display = 'none'; });
-})();
-
-/* ===== ODH_VIDEO_JS_PATCH_END ===== */
