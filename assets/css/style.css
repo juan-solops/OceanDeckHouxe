@@ -108,7 +108,7 @@ section { padding: 90px 20px; }
   }
 }
 
-/* ===== ODH_VIDEO_PATCH_START ===== */
+/* ===== ODH_HERO_ONLY_PATCH ===== */
 .hero { position: relative; overflow: hidden; }
 .hero::before {
   content: '';
@@ -119,7 +119,7 @@ section { padding: 90px 20px; }
   z-index: 0;
 }
 .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
-.hero-overlay { position: absolute; inset: 0; background: rgba(10, 35, 66, 0.45); z-index: 1; }
+.hero-overlay { position: absolute; inset: 0; background: rgba(10,35,66,.45); z-index: 1; }
 .hero-content { position: relative; z-index: 2; }
 
 .hero-stats {
@@ -137,9 +137,8 @@ section { padding: 90px 20px; }
 .stat-label { margin-top: 6px; line-height: 1.25; min-height: 2.2em; }
 
 @media (max-width: 900px) {
-  .hero-stats { grid-template-columns: repeat(2, minmax(130px, 1fr)); max-width: 420px; gap: 18px 24px; }
+  .hero-stats { grid-template-columns: repeat(2, minmax(130px,1fr)); max-width: 420px; gap: 18px 24px; }
 }
 @media (max-width: 600px) {
   .hero-stats { grid-template-columns: repeat(2, 1fr); max-width: 320px; gap: 14px 16px; }
 }
-/* ===== ODH_VIDEO_PATCH_END ===== */
